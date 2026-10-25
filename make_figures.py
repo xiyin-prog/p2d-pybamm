@@ -1,4 +1,4 @@
-import argparse, os, sys, warnings
+import argparse, logging, os, sys, warnings
 from pathlib import Path
 import numpy as np, matplotlib
 matplotlib.use("Agg")
@@ -26,6 +26,8 @@ else:
         UserWarning,
         stacklevel=1,
     )
+    warnings.filterwarnings("ignore", message=r"Glyph .* missing from font")
+    logging.getLogger("matplotlib.mathtext").setLevel(logging.ERROR)
 
 plt.rcParams.update({"font.family":font_family,"axes.unicode_minus":False,"mathtext.fontset":"cm",
  "font.size":12,"axes.grid":False,"grid.color":"#e3e3e3","grid.linewidth":0.8,"axes.edgecolor":"#444",
