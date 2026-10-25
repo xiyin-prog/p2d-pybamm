@@ -110,4 +110,4 @@ PyBaMM 26.10，Chen2020，DFN，放电截止 2.5 V。容量取放电结束时的
 
 ## 许可
 
-[MIT License](LICENSE). Copyright (c) 2026 Wangkai-prog.
+[MIT License](LICENSE). Copyright (c) 2026 xiyin-prog.
